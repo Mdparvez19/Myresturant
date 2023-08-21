@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: url("https://i.pinimg.com/originals/81/b2/34/81b234e6d4a79f243357e9f0d928135e.png") no-repeat;
+    /* background: url("https://i.pinimg.com/originals/a8/81/94/a881945fe1a859ddb8e5b0d50b97e6f2.jpg") no-repeat; */
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    height: 75px;
+}
+
+.logo{
+    font-size: 2em;
+    color: #162938;
+    user-select: none;
+    font-weight: bolder;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #162938;
+    text-decoration: none;
+    margin-left: 90px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #162938;
+    border-radius: 5px;
+    transform-origin: right;
+    transform:scaleX(0);
+    transition: transform .5s;
+}
+.navbar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.container{
+    margin-top: 250px;
+    border: 2px solid black;
+}

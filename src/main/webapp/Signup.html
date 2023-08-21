@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="./Signup.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="signup_form">
+			<h1>Sign Up Form</h1>
+			<form action="signup" method="post" enctype="multipart/form-data">
+				<div class="form_group">
+					<input type="text" id="username" name="username" placeholder="UserName" required>
+				</div>
+				<div class="form_group">
+					<input type="email" id="email" name="email" placeholder="Email" required>
+				</div>
+				<div class="form_group">
+					<input type="password" id="password" name="password" placeholder="Password" required>
+				</div>
+				<div class="form_group">
+					<input type="number" id="mobile" name="mobile" placeholder="Mobile Number" required>
+				</div>
+				<div class="form_group">
+					<input type="date" id="date" name="date" required>
+				</div>
+				<div class="form_group">
+					<input type="file" id="file" name="picture" required>
+				</div>
+				<div class="radio">
+					<label for="gender">Gender : </label>
+					<div class="radiooption">
+						<div>
+
+							<input type="radio" name="gender" value="male">
+							<label for="male">Male</label>
+						</div>
+						<div>
+							<input type="radio" name="gender" value="female">
+							<label for="female">Female</label>
+
+						</div>
+						<div>
+							<input type="radio" name="gender" value="others">
+							<label for="others">Others</label>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="form_group">
+					<button class="btn">Submit</button>
+				</div>
+				<div class="form_group">
+					<span>Already Have An Account? </span>
+					<a href="./Login.html">Login here..</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
